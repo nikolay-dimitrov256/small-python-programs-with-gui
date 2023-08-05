@@ -1,6 +1,6 @@
 # small-python-programs-with-gui
 
-### In this repository I'm going to upload my **Python** program with graphical user interface. At this point I'm using the tkinter library.
+### In this repository I'm going to upload my **Python** programs with graphical user interface. At this point I'm using the tkinter library.
 
 
 > ## 01 calculator
