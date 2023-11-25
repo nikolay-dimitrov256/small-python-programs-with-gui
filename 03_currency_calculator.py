@@ -38,7 +38,6 @@ def convert_currency(from_curr: str, to_curr: str, amount_: str):
         return None
 
 
-
 currencies = ['USD', 'EUR', 'BGN', 'GBP', 'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM',
               'BBD', 'BDT', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BTN', 'BWP', 'BYN', 'BZD', 'CAD', 'CDF',
               'CHF', 'CLP', 'CNY', 'COP', 'CRC', 'CUP', 'CVE', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EGP', 'ERN', 'ETB',
@@ -53,7 +52,6 @@ currencies = ['USD', 'EUR', 'BGN', 'GBP', 'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AO
 
 root = tk.Tk()
 root.title('Currency calculator')
-# root.geometry('250x250')
 
 from_currency = tk.StringVar()
 to_currency = tk.StringVar()
@@ -63,7 +61,6 @@ amount_entry = ttk.Entry(root, width=10)
 to_listbox = ttk.Combobox(root, width=5, textvariable=to_currency)
 to_listbox['values'] = currencies
 text = ttk.Entry(root, width=50, state='readonly')
-
 
 ttk.Separator().grid(row=0, columnspan=3, pady=5, sticky='WE')
 ttk.Label(text='From:').grid(row=1, column=0, padx=5, sticky='W')
@@ -79,4 +76,5 @@ ttk.Button(
 ttk.Separator().grid(row=5, columnspan=3, pady=5, sticky='WE')
 text.grid(row=6, columnspan=3, padx=5)
 ttk.Separator().grid(row=7, columnspan=3, pady=5, sticky='WE')
+
 root.mainloop()
